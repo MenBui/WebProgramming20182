@@ -114,8 +114,8 @@ Route::group(['prefix'=>'auth','middleware'=>'auth'],function(){
 	
 	Route::get('lienket', 'AdminController@user1');
 });
-Route::get("userAdmin", ['as'=>'userAdmin','uses'=>'AdminController@users']);
-Route::get('courseAdmin',['as'=>'courseAdmin','uses'=>'AdminController@course']);
+// Route::get("userAdmin", ['as'=>'userAdmin','uses'=>'AdminController@users']);
+// Route::get('courseAdmin',['as'=>'courseAdmin','uses'=>'AdminController@course']);
 
 Route::get('listUser',['as'=>'listUser','uses'=>'AdminController@listUser']);
 Route::get('listCourse',['as'=>'listCourse','uses'=>'AdminController@listCourse']);
